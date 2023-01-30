@@ -9,6 +9,11 @@
 
 
 :root {
+    --body-font: 'Montserrat', sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .75rem;
+
     --white: #fff;
     --black: #121212;
     --dark: #1e1e1e;
@@ -29,11 +34,6 @@
     --first-color-light: #F4F0FA;
 
     --text-color-light: #A5A1AA;
-
-    --body-font: 'Montserrat', sans-serif;
-    --normal-font-size: .938rem;
-    --small-font-size: .75rem;
-    --smaller-font-size: .75rem;
 
 
     --font-medium: 500;
