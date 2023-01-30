@@ -7,12 +7,7 @@
     src: url(fonts/Modius.otf);
 }
 
-
 :root {
-    --body-font: 'Montserrat', sans-serif;
-    --normal-font-size: .938rem;
-    --small-font-size: .75rem;
-    --smaller-font-size: .75rem;
 
     --white: #fff;
     --black: #121212;
@@ -35,6 +30,10 @@
 
     --text-color-light: #A5A1AA;
 
+    --body-font: 'Montserrat', sans-serif;
+    --normal-font-size: .938rem;
+    --small-font-size: .75rem;
+    --smaller-font-size: .75rem;
 
     --font-medium: 500;
     --font-semi-bold: 600;
@@ -353,12 +352,12 @@ a {
 #myFont {
     font-family: 'myfont';
     text-align: center;
-    font-size: 3em;
+    font-size: 2.3em;
     color: var(--text-color);
 }
 
 #myText {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     font-weight: 400;
     color: var(--text-color);
@@ -453,42 +452,6 @@ a {
     align-items: center;
     justify-content: center;
 }
-
-/* #logoDesignTitle {
-    font-family: 'myfont';
-    color: var(--text-color);
-    display: flex;
-    font-size: 1.6em;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2em;
-}
-
-.logoDesign {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3em;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 3em;
-}
-
-.logoName {
-    border: 1px solid var(--dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 3em;
-    background-color: var(--dark);
-    color: var(--white);
-}
-
-.logoImage img {
-    height: 15em;
-    border: 1px solid var(--dark);
-    /* box-shadow: 0 0 1px 1px var(--light-grey); */
-} */
-
 
 @media screen and (max-width: 571px) {
     #s2-heading {
@@ -691,3 +654,6 @@ input[type=submit] {
     }
 }
 
+.section-2 {
+    height: 60vh;
+}
