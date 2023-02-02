@@ -501,15 +501,15 @@ a {
 }
 
 .link-name {
-    color: var(--white);
+    color: var(--dark);
     font-size: 1em;
 }
 
 .link-2 {
-    background-color: var(--primary);
+    border: 1px solid var(--dark);
     height: 3em;
     width: 20em;
-    color: var(--white);
+    color: var(--dark);
     display: flex;
     align-items: center;
     justify-content: space-between;
