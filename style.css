@@ -514,14 +514,17 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
+    
 }
 
 .link-2 i {
     font-size: 1.3em;
 }
-
-.link-2:hover {
-    background-color: var(--secondary);
+.bx-right-arrow-alt {
+    transition: transform 0.3s ease-in-out;
+}
+.link-2:hover .bx-right-arrow-alt {
+    transform: translateX(5px);
 }
 
 .linkLeft {
@@ -533,6 +536,7 @@ a {
 .link-2 i {
     font-size: 1.3em;
 }
+
 
 @media screen and (max-width: 768px) {
     .link-2 {
