@@ -81,6 +81,7 @@ a {
 .header-container {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: space-between;
     height: var(--header-height);
 }
@@ -233,6 +234,10 @@ a {
         transform: translateY(-5.5px) rotate(-45deg);
     }
 
+    .header-container {
+        align-items: center;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
