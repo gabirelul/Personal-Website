@@ -69,6 +69,7 @@ a {
 
 .header {
     position: fixed;
+    align-items: center;
     top: 0;
     left: 0;
     background-color: var(--body-color);
@@ -232,11 +233,6 @@ a {
 
     .hamburgher.active .hamburgher-bar:nth-child(3) {
         transform: translateY(-5.5px) rotate(-45deg);
-    }
-
-    .header-container {
-        align-items: center;
-        text-align: center;
     }
 }
 
@@ -525,6 +521,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
+    border-radius: 50px;
 
 }
 
@@ -724,5 +721,3 @@ input[type=submit] {
     background: var(--secondary);
     transition: .2s ease;
 }
-
-#get-back {}
