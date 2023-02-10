@@ -317,7 +317,7 @@ a {
 }
 
 .section-1 {
-    height: auto;
+    height: 70vh;
     margin: 3.5em 0;
 }
 
@@ -685,21 +685,25 @@ input[type=submit] {
     font-size: 2.3em;
     color: var(--text-color);
 }
+
 .section-title i {
     animation: blink 2s infinite;
 }
 
 @keyframes blink {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
+
     50% {
-      opacity: 0;
+        opacity: 0;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
+}
+
 .section-p p {
     font-size: 1.2em;
     font-weight: 400;
@@ -711,7 +715,7 @@ input[type=submit] {
 }
 
 .section-2-right img {
-    max-width: 20em;
+    max-width: 30em;
     height: auto;
 }
 
