@@ -665,9 +665,7 @@ input[type=submit] {
     }
 } */
 
-.section-2 {
-    height: 100vh;
-}
+
 
 .section-2Container {
     display: flex;
