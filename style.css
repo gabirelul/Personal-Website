@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'myfont';
-    src: url(fonts/Morgant.otf);
+    src: url(fonts/Taruno.otf);
 }
 
 :root {
@@ -159,6 +159,7 @@ a {
     margin-top: .3rem;
     display: flex;
     align-items: center;
+    justify-content: left;
     color: var(--text-color);
 }
 
@@ -172,6 +173,7 @@ a {
 .logo-name {
     color: var(--text-color);
     font-family: 'myfont';
+    font-size: .9em;
 }
 
 .nav-list,
@@ -190,6 +192,7 @@ a {
 .nav-subtitle {
     font-family: 'myfont';
     letter-spacing: .1rem;
+    font-size: .9em;
     color: var(--text-color-light);
 }
 
@@ -382,7 +385,7 @@ a {
     padding: .8em 1em;
     border: 0;
     font-family: 'myfont';
-    font-size: 12px;
+    font-size: 11px;
     margin: 1.5em 0;
     cursor: pointer;
     color: var(--white);
@@ -780,7 +783,7 @@ input[type=submit] {
     color: var(--white);
     background: var(--dark);
     border: none;
-    font-size: 12px;
+    font-size: 11px;
     padding: .8em 1em;
     letter-spacing: 1px;
     border-radius: 50px;
