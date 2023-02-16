@@ -699,6 +699,16 @@ input[type=submit] {
     color: var(--text-color);
 }
 
+.section-title-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font-family: 'myfont';
+    font-size: var(--heading-size);
+    color: var(--text-color);
+}
+
 .section-title i {
     animation: blink 2s infinite;
 }
@@ -721,13 +731,13 @@ input[type=submit] {
     font-size: 1.2em;
     font-weight: 400;
     color: var(--text-color);
+    margin-top: -20px;
 }
 
 .section-2-left {
     max-width: 40%;
     display: flex;
     flex-direction: column;
-    gap: 0;
 }
 
 .section-2-right img {
