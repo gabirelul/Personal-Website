@@ -478,7 +478,7 @@ a {
 @media screen and (max-width: 571px) {
     #s2-heading {
         display: flex;
-        font-size: 1.4em;
+        font-size: 2.5em;
         justify-content: center;
         align-items: center;
     }
