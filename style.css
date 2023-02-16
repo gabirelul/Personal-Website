@@ -19,7 +19,6 @@
     --body-color: #f7f7f7;
     --text-color: #373d3f;
 
-    /*========== BEGINNING ==========*/
     --header-height: 3.5rem;
     --header-shadow: rgba(22, 8, 43, 0.1);
     --nav-width: 219px;
@@ -330,6 +329,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
 }
 
 .s1c1 img {
@@ -443,6 +443,7 @@ a {
     display: flex;
     flex-direction: column;
     height: auto;
+    flex-wrap: wrap;
     margin: var(--header-height) 0 0 0;
 }
 
@@ -458,9 +459,10 @@ a {
     font-family: 'myfont';
     color: var(--text-color);
     display: flex;
-    font-size: 1.6em;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 571px) {
