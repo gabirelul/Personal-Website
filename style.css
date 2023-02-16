@@ -96,8 +96,9 @@ a {
 
 .header-logo {
     color: var(--text-color);
-    font-family: 'myfont';
-    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .header-logo:hover {
@@ -106,9 +107,10 @@ a {
 
 .header-img-name {
     color: var(--dark);
-    font-family: 'myfont';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     display: none;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .hamburgher {
@@ -192,9 +194,10 @@ a {
 }
 
 .nav-subtitle {
-    font-family: 'myfont';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     letter-spacing: .1rem;
-    font-size: 22px;
+    font-size: 16px;
     color: var(--text-color-light);
 }
 
@@ -246,6 +249,7 @@ a {
 @media screen and (max-width: 768px) {
     .header-img-name {
         display: flex;
+        font-size: 16px;
     }
 
     .header-logo {
@@ -430,9 +434,11 @@ a {
         font-size: 1.1em;
         text-align: center;
     }
+
     .introButton {
         font-size: 13px;
     }
+
     .introButton i {
         font-size: 1em;
     }
@@ -778,12 +784,6 @@ input[type=submit] {
     height: auto;
 } */
 
-@media screen and (max-width: 768px) {
-    .container3 img {
-        max-width: 100%;
-        height: auto;
-    }
-}
 
 .workingContainer {
     display: flex;
@@ -823,4 +823,19 @@ input[type=submit] {
 .getBack:hover {
     background: var(--secondary);
     transition: .2s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .container3 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .getBack {
+        font-size: 13px;
+    }
+
+    .getBack i {
+        font-size: 1em;
+    }
 }
