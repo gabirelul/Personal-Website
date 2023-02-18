@@ -325,12 +325,9 @@ a {
     }
 }
 
-.section-1 {
-    height: 80vh;
-    margin: 3.5em 0;
-}
 
 .s1c1 {
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -342,7 +339,6 @@ a {
 .s1c1 img {
     height: 200px;
     width: 200px;
-    /* background-color: var(--light-grey); */
     border-radius: 50%;
 }
 
@@ -450,12 +446,20 @@ hr#line {
     border: 0;
     border-bottom: 1px solid var(--light-grey);
 }
+
 hr#under {
     border: 0;
     margin: -1em 0;
     width: 50px;
     border-bottom: 2px solid var(--text-color);
 }
+
+hr#under2 {
+    border: 0;
+    width: 50px;
+    border-bottom: 2px solid var(--text-color);
+}
+
 hr#short {
     border: 0;
     border-bottom: 1px solid var(--light-grey);
@@ -711,6 +715,7 @@ input[type=submit] {
     gap: 2em;
     align-items: center;
     justify-content: space-around;
+    margin: 3em 0 0 0;
 }
 
 .section-title {
@@ -727,10 +732,16 @@ input[type=submit] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
     font-family: 'myfont';
     font-size: var(--heading-size);
     color: var(--text-color);
+    font-size: 64px;
+}
+
+.section-title-center p {
+    font-size: 64px;
+    margin: 0;
+    padding: 0;
 }
 
 .section-title i {
@@ -846,7 +857,6 @@ input[type=submit] {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: 0;
 }
 
 .container3 {
@@ -855,6 +865,7 @@ input[type=submit] {
     width: 100%;
     margin: 0;
     padding: 0;
+    margin: 3em 0 0 0;
 }
 
 
@@ -941,7 +952,7 @@ input[type=submit] {
         justify-content: space-between;
     }
 
-    .section-title-center {
+    .section-title-center p {
         font-size: 40px;
     }
 
@@ -963,22 +974,40 @@ input[type=submit] {
         height: 0;
     }
 
-    .section-1-banner {
-        height: auto;
-        background-color: var(--dark);
+    .s1b-box p {
+        font-size: 20px;
+        font-weight: 300;
     }
 
+    .s1b-box i {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 425px) {
     .s1b-container {
         height: 80vh;
         flex-direction: column;
         align-items: center;
     }
+
     .s1b-box p {
         font-size: 20px;
         font-weight: 300;
     }
-    
+
     .s1b-box i {
         font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .section-2-right img {
+        max-height: 350px;
+        width: auto;
+    }
+
+    .section-p p {
+        margin: 0 3em;
     }
 }
