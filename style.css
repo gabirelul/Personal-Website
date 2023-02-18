@@ -1033,6 +1033,10 @@ input[type=submit] {
         font-size: 40px;
     }
 
+    .services-title-center p {
+        font-size: 40px;
+    }
+    
     .container3 {
         display: flex;
         flex-direction: column;
@@ -1062,6 +1066,7 @@ input[type=submit] {
 
     .services-title-center {
         text-align: center;
+        font-size: 40px;
     }
 
     .service-img img {
