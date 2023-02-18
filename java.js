@@ -12,3 +12,10 @@ const showMenu = (headerToggle, navbarId) => {
     }
 }
 showMenu('header-toggle', 'navbar')
+
+
+// const expandImage = document.querySelector('.expand-image');
+
+// expandImage.addEventListener('click', () => {
+//     expandImage.classList.toggle('expand-image-fullscreen');
+// });
