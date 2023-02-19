@@ -810,12 +810,28 @@ input[type=submit] {
     }
 }
 
+.containerImage {
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
 
+.containerImage img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 
 .workingContainer {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .workingContainer p {
@@ -990,6 +1006,9 @@ input[type=submit] {
     margin-left: 2em;
     flex: 1;
     flex-basis: 1;
+}
+.service-content p {
+    line-height: 20px;
 }
 
 .service-button {
