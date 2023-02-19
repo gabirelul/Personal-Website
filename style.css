@@ -1046,6 +1046,23 @@ input[type=submit] {
     background-color: var(--secondary);
 }
 
+/* ===================== FOOTER ====================== */
+/* 
+.footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footr {
+    display: flex;
+    align-items: center;
+}
+.footr a {
+    text-decoration: underline;
+} */
+
+/* --------------------------------------------------- */
 @media screen and (max-width: 768px) {
     .getBack {
         font-size: 13px;
@@ -1097,6 +1114,7 @@ input[type=submit] {
     }
 
     .services-title-center {
+        margin-top: 1em;
         text-align: center;
         font-size: 40px;
     }
