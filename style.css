@@ -602,7 +602,7 @@ hr#short {
     }
 }
 
-/* .contact {
+.contact {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -642,7 +642,7 @@ hr#short {
     width: 20em;
     background: 0;
     border: 0;
-    border: 1px solid var(--dark);
+    border-bottom: 1px solid var(--dark);
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
@@ -653,7 +653,7 @@ hr#short {
     width: 20em;
     background: 0;
     border: 0;
-    border: 1px solid var(--dark);
+    border-bottom: 1px solid var(--dark);
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
@@ -662,22 +662,24 @@ hr#short {
 
 input[type=submit] {
     background-color: var(--primary);
+    width: 8em;
     border: 0;
-    width: 20em;
     font-family: var(--body-font);
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 600;
     padding: .5em;
     color: var(--white);
     cursor: pointer;
-    border-radius: 0;
-} */
+    border-radius: 50px;
+}
 
-/* input[type=submit]:hover {
-    background-color: var(--yellow);
+input[type=submit]:hover {
+    background-color: var(--secondary);
     transition: .2s ease-in-out;
     cursor: pointer;
-} */
-/* @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .contact {
         display: flex;
         flex-direction: column;
@@ -697,15 +699,15 @@ input[type=submit] {
     #headingContact {
         font-size: 1.4em;
     }
-} */
+}
 
-/* @media screen and (max-width: 319px) {
+@media screen and (max-width: 319px) {
 
     #lname,
     #mesaj {
         width: 15em;
     }
-} */
+}
 
 .between-sections {
     height: 15vh;
@@ -1047,12 +1049,13 @@ input[type=submit] {
 }
 
 /* ===================== FOOTER ====================== */
-/* 
+
 .footer {
     height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    bottom: 0;
 }
 .footr {
     display: flex;
@@ -1060,7 +1063,7 @@ input[type=submit] {
 }
 .footr a {
     text-decoration: underline;
-} */
+}
 
 /* --------------------------------------------------- */
 @media screen and (max-width: 768px) {
