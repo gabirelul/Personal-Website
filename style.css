@@ -330,7 +330,6 @@ a {
 .s1c1 {
     height: 80vh;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -595,26 +594,28 @@ hr#short {
 /* ------------- CONTACT ---------------- */
 
 .contact {
-    height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    margin: 4em;
+    margin-top: 4em;
     gap: 3em;
 }
 
 .contactLeft {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 0;
-    justify-content: center;
+}
+
+.contactLeft p {
+    text-align: center;
 }
 
 #myTextContact {
     text-align: left;
     font-size: 1.2em;
+    text-align: center;
 }
 
 #headingContact {
@@ -625,6 +626,7 @@ hr#short {
     align-items: center;
     justify-content: center;
     margin: 0;
+    text-align: center;
     padding: 0;
 }
 
@@ -635,7 +637,7 @@ hr#short {
     justify-content: center;
     gap: 1em;
     height: 100%;
-    width: 30em;
+    width: 100%;
 }
 
 
@@ -1108,7 +1110,76 @@ input[type=submit]:hover {
 }
 
 /* --------------------------------------------------- */
+.section-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    width: 100%;
+}
+#scroll-container {
+    overflow: hidden;
+    width: auto;
+    align-items: center;
+    border: 1px solid green;
+    width: 90vw;
+}
+
+#scroll-text {
+    font-size: 20px;
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+/* --------------------------------------------------- */
 @media screen and (max-width: 768px) {
+    #scroll-container {
+        align-items: center;
+        width: 18em;
+    }
+
     .footr {
         text-align: center;
     }
@@ -1190,6 +1261,7 @@ input[type=submit]:hover {
         left: 0;
     }
 }
+
 
 @media screen and (max-width: 1024px) {
     .servicesContainer {
