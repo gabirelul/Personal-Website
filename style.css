@@ -526,6 +526,7 @@ hr#short {
 
 .links {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
@@ -591,23 +592,16 @@ hr#short {
     font-size: 1.3em;
 }
 
-
-@media screen and (max-width: 768px) {
-    .link-2 {
-        width: 16em;
-    }
-
-    .link-content {
-        width: 15em;
-    }
-}
+/* ------------- CONTACT ---------------- */
 
 .contact {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin: 4em;
+    gap: 3em;
 }
 
 .contactLeft {
@@ -615,6 +609,7 @@ hr#short {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
+    justify-content: center;
 }
 
 #myTextContact {
@@ -626,23 +621,40 @@ hr#short {
     font-family: 'myfont';
     color: var(--text-color);
     display: flex;
-    font-size: 1.6em;
+    font-size: 64px;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .contactRight {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1em;
+    height: 100%;
+    width: 30em;
+}
+
+
+#fname {
+    width: 35em;
+    background: 0;
+    border: 0;
+    border: 1px solid var(--dark);
+    font-family: var(--body-font);
+    font-weight: 400;
+    padding: .5em;
+    border-radius: 0;
 }
 
 #lname {
-    width: 20em;
+    width: 35em;
     background: 0;
     border: 0;
-    border-bottom: 1px solid var(--dark);
+    border: 1px solid var(--dark);
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
@@ -650,10 +662,10 @@ hr#short {
 }
 
 #mesaj {
-    width: 20em;
+    width: 35em;
     background: 0;
     border: 0;
-    border-bottom: 1px solid var(--dark);
+    border: 1px solid var(--dark);
     font-family: var(--body-font);
     font-weight: 400;
     padding: .5em;
@@ -680,6 +692,14 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 768px) {
+    .link-2 {
+        width: 16em;
+    }
+
+    .link-content {
+        width: 15em;
+    }
+
     .contact {
         display: flex;
         flex-direction: column;
@@ -697,7 +717,19 @@ input[type=submit]:hover {
     }
 
     #headingContact {
-        font-size: 1.4em;
+        font-size: 40px;
+    }
+
+    #fname {
+        width: 20em;
+    }
+
+    #lname {
+        width: 20em;
+    }
+
+    #mesaj {
+        width: 20em;
     }
 }
 
@@ -874,7 +906,7 @@ input[type=submit]:hover {
 .section-3 {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
 }
 
 .container3 {
@@ -1056,17 +1088,31 @@ input[type=submit]:hover {
     flex-direction: column;
     align-items: center;
     bottom: 0;
+    margin-top: 5em;
 }
+
 .footr {
     display: flex;
+    flex-direction: column;
+    gap: 0;
     align-items: center;
 }
+
 .footr a {
     text-decoration: underline;
 }
 
+.footr p {
+    margin: 0;
+    padding: 0;
+}
+
 /* --------------------------------------------------- */
 @media screen and (max-width: 768px) {
+    .footr {
+        text-align: center;
+    }
+
     .getBack {
         font-size: 13px;
     }
