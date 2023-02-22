@@ -26,6 +26,8 @@ var cookieAccept = document.getElementById('cookie-accept');
 // Check if the user has accepted the cookie policy before
 if (getCookie('cookieAccepted') === '') {
   cookiePopup.style.display = 'block';
+} else {
+    cookiePopup.style.display = 'none';
 }
 
 // When the user clicks the accept button, set the cookie and hide the popup
