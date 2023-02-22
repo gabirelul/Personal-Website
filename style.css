@@ -1317,7 +1317,7 @@ input[type=submit]:hover {
     /* ----- */
     .privacyMain h1 {
         font-family: 'myfont';
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .privacyMain h3 {
@@ -1339,9 +1339,10 @@ input[type=submit]:hover {
         font-weight: 600;
         font-size: 16px;
     }
+    /* ----- */
     .cookiesMain h1 {
         font-family: 'myfont';
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .cookiesMain h3 {
