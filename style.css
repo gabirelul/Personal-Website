@@ -637,12 +637,12 @@ hr#short {
     justify-content: center;
     gap: 1em;
     height: 100%;
-    width: 100%;
+    width: 30em;
 }
 
 
 #fname {
-    width: 35em;
+    width: 100%;
     background: 0;
     border: 0;
     border: 1px solid var(--dark);
@@ -653,7 +653,7 @@ hr#short {
 }
 
 #lname {
-    width: 35em;
+    width: 100%;
     background: 0;
     border: 0;
     border: 1px solid var(--dark);
@@ -664,7 +664,7 @@ hr#short {
 }
 
 #mesaj {
-    width: 35em;
+    width: 100%;
     background: 0;
     border: 0;
     border: 1px solid var(--dark);
@@ -711,6 +711,10 @@ input[type=submit]:hover {
         align-items: center;
         text-align: center;
         border: 0;
+    }
+
+    .contactRight {
+        width: 20em;
     }
 
     #myTextContact {
@@ -1172,6 +1176,11 @@ input[type=submit]:hover {
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
+}
+/* --------------------------------------------------- */
+
+.mainProjects p {
+    font-size: 18px;
 }
 
 /* --------------------------------------------------- */
