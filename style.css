@@ -693,6 +693,7 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
+
 @media screen and (max-width: 768px) {
     .link-2 {
         width: 16em;
@@ -1177,6 +1178,7 @@ input[type=submit]:hover {
         transform: translateX(-100%);
     }
 }
+
 /* --------------------------------------------------- */
 
 .mainProjects p {
@@ -1210,6 +1212,7 @@ input[type=submit]:hover {
     font-weight: 600;
     font-size: 16px;
 }
+
 /* ------ */
 .cookiesMain h1 {
     font-family: 'myfont';
@@ -1235,6 +1238,39 @@ input[type=submit]:hover {
 .cookiesMain strong {
     font-weight: 600;
     font-size: 16px;
+}
+
+#cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--body-color);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 1px 1px var(--light-grey);
+}
+
+#cookie-accept {
+    background-color: var(--secondary);
+    font-family: var(--body-font);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+#cookie-more {
+    background-color: #bbb;
+    font-family: var(--body-font);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 16px;
 }
 
 /* --------------------------------------------------- */
@@ -1351,6 +1387,7 @@ input[type=submit]:hover {
         font-weight: 600;
         font-size: 16px;
     }
+
     /* ----- */
     .cookiesMain h1 {
         font-family: 'myfont';
