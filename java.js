@@ -23,15 +23,18 @@ showMenu('header-toggle', 'navbar')
 var cookiePopup = document.getElementById('cookie-popup');
 var cookieAccept = document.getElementById('cookie-accept');
 
+// Check if the user has accepted the cookie policy before
 if (getCookie('cookieAccepted') === '') {
   cookiePopup.style.display = 'block';
 }
 
+// When the user clicks the accept button, set the cookie and hide the popup
 cookieAccept.addEventListener('click', function() {
   setCookie('cookieAccepted', 'true', 365);
   cookiePopup.style.display = 'none';
 });
 
+// Helper function to set a cookie with a given name, value, and expiration time in days
 function setCookie(name, value, days) {
   var expires = '';
   if (days) {
@@ -42,6 +45,7 @@ function setCookie(name, value, days) {
   document.cookie = name + '=' + value + expires + '; path=/';
 }
 
+// Helper function to get the value of a cookie with a given name
 function getCookie(name) {
   var nameEQ = name + '=';
   var ca = document.cookie.split(';');
