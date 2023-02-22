@@ -527,7 +527,7 @@ hr#short {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
 }
 
@@ -1117,6 +1117,7 @@ input[type=submit]:hover {
     border: 1px solid red;
     width: 100%;
 }
+
 #scroll-container {
     overflow: hidden;
     width: auto;
@@ -1171,6 +1172,58 @@ input[type=submit]:hover {
         -webkit-transform: translateX(-100%);
         transform: translateX(-100%);
     }
+}
+
+/* --------------------------------------------------- */
+
+.privacyMain h1 {
+    font-family: 'myfont';
+    font-size: 50px;
+}
+
+.privacyMain h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.privacyMain h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.privacyMain p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.privacyMain strong {
+    font-weight: 600;
+    font-size: 16px;
+}
+/* ------ */
+.cookiesMain h1 {
+    font-family: 'myfont';
+    font-size: 50px;
+}
+
+.cookiesMain h3 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.cookiesMain h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.cookiesMain p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.cookiesMain strong {
+    font-weight: 600;
+    font-size: 16px;
 }
 
 /* --------------------------------------------------- */
@@ -1259,6 +1312,56 @@ input[type=submit]:hover {
         margin-left: 0;
         position: relative;
         left: 0;
+    }
+
+    /* ----- */
+    .privacyMain h1 {
+        font-family: 'myfont';
+        font-size: 40px;
+    }
+
+    .privacyMain h3 {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .privacyMain h4 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .privacyMain p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .privacyMain strong {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .cookiesMain h1 {
+        font-family: 'myfont';
+        font-size: 40px;
+    }
+
+    .cookiesMain h3 {
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .cookiesMain h4 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .cookiesMain p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .cookiesMain strong {
+        font-weight: 600;
+        font-size: 16px;
     }
 }
 
