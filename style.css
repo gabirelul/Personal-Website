@@ -780,17 +780,18 @@ input[type=submit]:hover {
     color: var(--text-color);
 }
 
-.section-title-center {
+.container3-heading {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 1em;
     font-family: 'myfont';
     color: var(--text-color);
     font-size: 64px;
 }
 
 
-.section-title-center p {
+.container3-heading p {
     font-size: 64px;
     margin: 0;
     padding: 0;
@@ -815,8 +816,8 @@ input[type=submit]:hover {
 }
 
 .section-p p {
-    font-size: 1.2em;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     color: var(--text-color);
     margin-top: -20px;
 }
@@ -938,8 +939,9 @@ input[type=submit]:hover {
 
 
 #skills-heading {
-    font-family: 'myfont';
-    font-size: 32px;
+    font-family: var(--body-font);
+    font-size: 22px;
+    font-weight: 700;
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -960,6 +962,12 @@ input[type=submit]:hover {
     gap: 1em;
 }
 
+.rarrow {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
 .skill p {
     font-weight: 500;
     font-size: 18px;
@@ -969,13 +977,6 @@ input[type=submit]:hover {
 .skills-2,
 .skills-3 {
     padding: 1em;
-}
-
-.stars {
-    display: flex;
-    flex-direction: row;
-    gap: 2px;
-    font-size: 16px;
 }
 
 .s1b-container {
@@ -1113,6 +1114,7 @@ input[type=submit]:hover {
 .s4-text {
     width: 50%;
 }
+
 .s4-text p {
     text-align: center;
 }
@@ -1135,20 +1137,21 @@ input[type=submit]:hover {
     .section-4 {
         height: auto;
     }
-    
+
     .s4-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .s4-text {
         width: 100%;
     }
+
     .s4-text p {
         text-align: center;
     }
-    
+
     .s4-img {
         align-items: center;
     }
@@ -1156,12 +1159,20 @@ input[type=submit]:hover {
     #mockup-bg {
         display: none;
     }
+
     #mockup-bg-phone {
         display: block;
         max-height: 11em;
         width: auto;
     }
-    
+    #skills-heading {
+        font-weight: 600;
+    }
+    .skill p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
 }
 
 /* ===================== FOOTER ====================== */
@@ -1374,13 +1385,16 @@ input[type=submit]:hover {
         align-items: center;
         justify-content: space-between;
     }
-
-    .section-title-center p {
+    
+    .container3-heading p {
         font-size: 40px;
+        margin: 0;
+        padding: 0;
     }
 
     .services-title-center p {
         font-size: 40px;
+        text-align: center;
     }
 
     .container3 {
@@ -1390,7 +1404,7 @@ input[type=submit]:hover {
     }
 
     #skills-heading {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .skills {
