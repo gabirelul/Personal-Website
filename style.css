@@ -979,10 +979,12 @@ input[type=submit]:hover {
     margin: 0;
     padding: 0;
 }
+
 .rarrow-sub {
     padding-left: 2em;
     font-size: 16px;
 }
+
 .skill p {
     font-weight: 400;
     font-size: 18px;
@@ -1560,5 +1562,45 @@ input[type=submit]:hover {
 
     .section-p p {
         margin: 0 3em;
+    }
+}
+
+/* ----------------------------------- */
+.mySkills {
+    margin: 5em 2em 5em 2em;
+}
+
+.mySkillsContainer {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+#boxSkills li {
+    margin: 7px;
+}
+
+#boxSkills{
+    margin: 8px;
+}
+
+
+#skillsBullet {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+#skillsList {
+    margin: 0;
+    padding: 0;
+}
+
+.bullet-icon {
+    font-size: 6px;
+}
+
+@media screen and (max-width: 768px) {
+    .mySkillsContainer {
+        flex-direction: column;
     }
 }
