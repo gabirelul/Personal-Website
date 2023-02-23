@@ -360,7 +360,6 @@ a {
 
 #heading {
     font-family: 'myfont';
-    text-align: center;
     font-size: 40px;
     margin: 0;
     color: var(--text-color);
@@ -368,7 +367,6 @@ a {
 
 #text {
     font-size: 16px;
-    text-align: center;
     font-weight: 400;
     color: var(--text-color);
 }
@@ -1099,10 +1097,73 @@ input[type=submit]:hover {
 .service-btn:hover {
     background-color: var(--secondary);
 }
+
 /* --------------------------------------------------- */
+
 .section-4 {
-    height: 30vh;
+    height: auto;
 }
+
+.s4-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.s4-text {
+    width: 50%;
+}
+.s4-text p {
+    text-align: center;
+}
+
+.s4-img {
+    align-items: center;
+}
+
+.s4-img img {
+    height: 35em;
+    width: auto;
+    margin: 0;
+}
+
+#mockup-bg-phone {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .section-4 {
+        height: auto;
+    }
+    
+    .s4-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .s4-text {
+        width: 100%;
+    }
+    .s4-text p {
+        text-align: center;
+    }
+    
+    .s4-img {
+        align-items: center;
+    }
+
+    #mockup-bg {
+        display: none;
+    }
+    #mockup-bg-phone {
+        display: block;
+        max-height: 11em;
+        width: auto;
+    }
+    
+}
+
 /* ===================== FOOTER ====================== */
 
 .footer {
@@ -1262,7 +1323,7 @@ input[type=submit]:hover {
     left: 0;
     right: 0;
     background-color: var(--body-color);
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     box-shadow: 0 0 1px 1px var(--light-grey);
 }
