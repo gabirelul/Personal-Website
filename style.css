@@ -970,7 +970,8 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 .rarrow {
@@ -978,16 +979,23 @@ input[type=submit]:hover {
     margin: 0;
     padding: 0;
 }
-
+.rarrow-sub {
+    padding-left: 2em;
+    font-size: 16px;
+}
 .skill p {
     font-weight: 400;
     font-size: 18px;
+    margin: 8px;
 }
 
 .skills-1,
 .skills-2,
 .skills-3 {
     padding: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 .s1b-container {
