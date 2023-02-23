@@ -663,7 +663,7 @@ hr#short {
     border-radius: 0;
 }
 
-#lname {
+#email {
     width: 100%;
     background: 0;
     border: 0;
@@ -704,6 +704,17 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
+.contact-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em;
+}
+
+.contact-2 p {
+    font-size: 16px;
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
     .link-2 {
@@ -742,7 +753,7 @@ input[type=submit]:hover {
         width: 20em;
     }
 
-    #lname {
+    #email {
         width: 20em;
     }
 
@@ -753,7 +764,7 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 319px) {
 
-    #lname,
+    #email,
     #mesaj {
         width: 15em;
     }
@@ -1165,9 +1176,11 @@ input[type=submit]:hover {
         max-height: 11em;
         width: auto;
     }
+
     #skills-heading {
         font-weight: 600;
     }
+
     .skill p {
         font-weight: 400;
         font-size: 16px;
@@ -1385,7 +1398,7 @@ input[type=submit]:hover {
         align-items: center;
         justify-content: space-between;
     }
-    
+
     .container3-heading p {
         font-size: 40px;
         margin: 0;
