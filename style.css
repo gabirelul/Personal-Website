@@ -817,7 +817,7 @@ input[type=submit]:hover {
 
 .section-p p {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-color);
     margin-top: -20px;
 }
@@ -969,7 +969,7 @@ input[type=submit]:hover {
 }
 
 .skill p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 18px;
 }
 
