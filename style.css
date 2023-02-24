@@ -366,7 +366,7 @@ a {
 }
 
 #text {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--text-color);
 }
@@ -422,6 +422,10 @@ a {
     #myFont {
         font-size: 40px;
     }
+    #text {
+        font-size: 16px;
+    }
+    
 
     .s1c1-me {
         flex-direction: column;
