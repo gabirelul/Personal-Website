@@ -11,6 +11,7 @@
     --white: #fff;
     --black: #121212;
     --dark: #221d21;
+    --link: #0000EE;
 
     --primary: #032539;
     --secondary: #0099ff;
@@ -1394,6 +1395,7 @@ input[type=submit]:hover {
     font-weight: 500;
     text-align: center;
 }
+
 .galleryRow {
     display: flex;
     flex-wrap: wrap;
@@ -1689,12 +1691,16 @@ input[type=submit]:hover {
     gap: 2em;
 }
 
+#boxSkills summary {
+    font-size: 16px;
+}
+
 #boxSkills li {
-    margin: 7px;
+    margin-top: 7px;
 }
 
 #boxSkills {
-    margin: 8px;
+    margin-top: 8px;
 }
 
 
@@ -1716,4 +1722,8 @@ input[type=submit]:hover {
     .mySkillsContainer {
         flex-direction: column;
     }
+    #boxSkills summary {
+        font-size: 15px;
+    }
+    
 }
