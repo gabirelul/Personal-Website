@@ -1703,7 +1703,9 @@ input[type=submit]:hover {
     margin-top: 8px;
 }
 
-
+#boxSkills details ul li {
+    margin: 0;
+}
 #skillsBullet {
     margin: 0 0 0 20px;
     padding: 0;
