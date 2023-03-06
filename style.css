@@ -470,6 +470,21 @@ hr#under {
     width: 50px;
     border-bottom: 2px solid var(--text-color);
 }
+.lineGallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+hr#gallery-under {
+    display: flex;
+    align-items: center;
+    border: 0;
+    margin: -1em 0;
+    width: 50px;
+    border-bottom: 2px solid var(--text-color);
+}
 
 hr#under2 {
     border: 0;
@@ -811,6 +826,23 @@ input[type=submit]:hover {
 .container3-heading p {
     font-size: 64px;
     margin: 0;
+    padding: 0;
+}
+
+.gallery-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    font-family: 'myfont';
+    color: var(--text-color);
+    font-size: 64px;
+}
+
+
+.gallery-heading p {
+    font-size: 64px;
+    margin: 1em 0 0 0;
     padding: 0;
 }
 
@@ -1400,6 +1432,7 @@ input[type=submit]:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    margin: 2em 0;
 }
 
 .galleryColumn {
@@ -1586,6 +1619,11 @@ input[type=submit]:hover {
     .container3-heading p {
         font-size: 40px;
         margin: 0;
+        padding: 0;
+    }
+    .gallery-heading p {
+        font-size: 40px;
+        margin: 1em 0 0 0;
         padding: 0;
     }
 
