@@ -370,6 +370,7 @@ a {
     font-size: 18px;
     font-weight: 400;
     color: var(--text-color);
+    margin: 0 0 1em 0;
 }
 
 #myText {
@@ -1538,7 +1539,7 @@ input[type=submit]:hover {
 /* --------------------------------------------------- */
 
 .section-5 {
-    margin: 6em 2em 6em 2em;
+    margin: 6em 2em 4em 2em;
     height: 60vh;
     display: flex;
     flex-direction: column;
