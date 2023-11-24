@@ -16,8 +16,8 @@
     <header class="header">
         <div class="header-container">
             <img src="img/eu.jpeg" class="header__img">
-            <a href="index.html" class="header-img-name">GALLERY</a>
-            <a href="index.html" class="header-logo">GALLERY</a>
+            <a href="gallery.html" class="header-img-name">GALLERY</a>
+            <a href="gallery.html" class="header-logo">GALLERY</a>
 
             <div class="hamburgher" id="header-toggle">
                 <span class="hamburgher-bar"></span>
@@ -87,75 +87,67 @@
                 </div>
 
             </div>
-
-            <!-- <a href="#" class="nav-copyright">
-                <i class='bx bx-copyright nav-icon'></i>
-                <span class="nav-copyright-text">2022</span>
-            </a> -->
         </nav>
     </div>
 
     <div class="gallery-heading">
         <p>Photo Gallery</p>
-        
     </div>
     <div class="lineGallery">
         <hr id="gallery-under">
     </div>
-    <p style="display: flex; justify-content: center;">Under maintenance | Coming soon :D</p>
-    <!-- <div class="galleryRow">
-        <div class="galleryColumn">
-            <img id="myImg" src="gallery/L1.jpg" alt="">
-            <img id="myImg" src="gallery/L5.jpg" alt="">
-            <img id="myImg" src="gallery/m6.jpg" alt="">
-            <img id="myImg" src="gallery/L4.jpg" alt="">
-            <img id="myImg" src="gallery/h3.png" alt="">
-        </div>
-        <div class="galleryColumn">
-            <img id="myImg" src="gallery/w1.jpg" alt="">
-            <img id="myImg" src="gallery/1.jpg" alt="">
-            <img id="myImg" src="gallery/w2.jpg" alt="">
-            <img id="myImg" src="gallery/L3.jpg" alt="">
-            <img id="myImg" src="gallery/h4.png" alt="">
-            <img id="myImg" src="gallery/h5.png" alt="">
-        </div>
-        <div class="galleryColumn">
-            <img id="myImg" src="gallery/m1.jpg" alt="">
-            <img id="myImg" src="gallery/L2.jpg" alt="">
-            <img id="myImg" src="gallery/O1.jpg" alt="">
-            <img id="myImg" src="gallery/h1.png" alt="">
-        </div>
-        <div class="galleryColumn">
-            <img id="myImg" src="gallery/stele.jpg" alt="">
-            <img id="myImg" src="gallery/O2.jpg" alt="">
-            <img id="myImg" src="gallery/m3.jpg" alt="">
-            <img id="myImg" src="gallery/h2.png" alt="">
-        </div>
-    </div> -->
 
+    <div class="gallerySection">
+        <div class="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('cars')">Cars</button>
+            <button class="btn" onclick="filterSelection('people')">People</button>
+            <button class="btn" onclick="filterSelection('other')">Other</button>
+        </div>
+
+        <div class="row">
+            <div class="column cars">
+                <img src="gallery/cars/RXC-C_01.png" alt="cars" style="width:100%">
+            </div>
+            <div class="column cars">
+                <img src="gallery/cars/RXC-C_02.png" alt="cars" style="width:100%">
+            </div>
+            <div class="column cars">
+                <img src="gallery/cars/RXC-C_03.png" alt="cars" style="width:100%">
+            </div>
+            <div class="column cars">
+                <img src="gallery/cars/RXC-C_04.png" alt="cars" style="width:100%">
+            </div>
+            <div class="column cars">
+                <img src="gallery/cars/RXC-C_05.png" alt="cars" style="width:100%">
+            </div>
+            <!-- --- -->
+
+            <div class="column people">
+                <img src="gallery/people/DSC00062.jpg" alt="people" style="width:100%">
+            </div>
+            <div class="column people">
+                <img src="gallery/people/DSC00138.jpg" alt="people" style="width:100%">
+            </div>
+            <div class="column people">
+                <img src="" alt="people" style="width:100%">
+            </div>
+            
+            <!-- --- -->
+
+            <div class="column other">
+                <img src="" alt="other" style="width:100%">
+            </div>
+            <div class="column other">
+                <img src="" alt="other" style="width:100%">
+            </div>
+            <div class="column other">
+                <img src="" alt="other" style="width:100%">
+            </div>
+        </div>
+    </div>
 
     <script src="java.js"></script>
-    <script>
-        var modal = document.getElementById("myModal");
-
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("myImg");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function () {
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-    </script>
 
 </body>
 
