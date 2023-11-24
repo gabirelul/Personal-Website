@@ -1365,13 +1365,22 @@ input[type=submit]:hover {
 
 .column {
     float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 2em;
     width: 33.33%;
     display: none;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .column img {
     cursor: pointer;
+    display: inline-block;
 }
 
 .row:after {
@@ -1384,6 +1393,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: row;
     gap: 1em;
+    padding-top: 1em;
 }
 
 .btn.active {
@@ -1455,9 +1465,21 @@ input[type=submit]:hover {
     .myBtnContainer {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+}
+@media (min-width: 600px) {
+    .column {
+        width: 48%; /* Adjust as needed */
     }
 }
 
+@media (min-width: 768px) {
+    .column {
+        width: 31%; /* Adjust as needed */
+    }
+}
 /* --------------------------------------------------- */
 
 .section-5 {
