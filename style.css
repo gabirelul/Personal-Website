@@ -1480,6 +1480,14 @@ input[type=submit]:hover {
         width: 31%; /* Adjust as needed */
     }
 }
+
+.copyrightss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-wrap: wrap;
+}
 /* --------------------------------------------------- */
 
 .section-5 {
