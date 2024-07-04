@@ -125,7 +125,6 @@ a {
     width: 20px;
     height: 3px;
     margin: 4px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--dark);
 }
@@ -151,8 +150,6 @@ a {
     justify-content: space-between;
     padding-bottom: 3rem;
     overflow: auto;
-    /* scrollbar-width: none; */
-    /* pt mozilla */
 }
 
 /* pt chrome si altele */
@@ -604,9 +601,6 @@ hr#short {
     font-weight: 500;
 }
 
-.link-2 i {
-    font-size: 1.3em;
-}
 
 .bx-right-arrow-alt {
     transition: transform 0.3s ease-in-out;
