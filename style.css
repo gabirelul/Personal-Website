@@ -2,8 +2,7 @@
 
 @font-face {
     font-family: 'myfont';
-    src: url(fonts/CalSansSemiBold.otf);
-    /*src: url(fonts/Abhaya/AbhayaLibre-ExtraBold.ttf);*/
+    src: url(fonts/cogley.ttf);
 }
 
 :root {
@@ -325,29 +324,6 @@ a {
 }
 
 
-.s1c1 {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-}
-
-.s1c1 img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-.s1c1-me {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-
 #myFont {
     font-family: 'myfont';
     text-align: center;
@@ -424,18 +400,6 @@ a {
 
     #text {
         font-size: 16px;
-    }
-
-
-    .s1c1-me {
-        flex-direction: column;
-        gap: 0;
-        justify-content: center;
-    }
-
-    .s1c1 img {
-        height: 150px;
-        width: 150px;
     }
 
     #myText {
@@ -543,15 +507,6 @@ hr#short {
 
     .logoDesign {
         justify-content: center;
-    }
-
-    .s1c1 {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .s1c1 p {
-        text-align: center;
     }
 }
 
@@ -841,7 +796,7 @@ input[type=submit]:hover {
     margin-bottom: 1em;
     font-family: 'myfont';
     color: var(--text-color);
-    font-size: 64px;
+    font-size: 3rem;
 }
 
 
@@ -1373,7 +1328,7 @@ input[type=submit]:hover {
 
 .column img {
     cursor: pointer;
-    display: inline-block  ;
+    display: inline-block;
 }
 
 .row:after {
@@ -1462,15 +1417,18 @@ input[type=submit]:hover {
         gap: 0;
     }
 }
+
 @media (min-width: 600px) {
     .column {
-        width: 48%; /* Adjust as needed */
+        width: 48%;
+        /* Adjust as needed */
     }
 }
 
 @media (min-width: 768px) {
     .column {
-        width: 31%; /* Adjust as needed */
+        width: 31%;
+        /* Adjust as needed */
     }
 }
 
@@ -1481,6 +1439,7 @@ input[type=submit]:hover {
     text-align: center;
     text-wrap: wrap;
 }
+
 /* --------------------------------------------------- */
 
 .section-5 {
@@ -1777,4 +1736,107 @@ input[type=submit]:hover {
     .section-p p {
         margin: 0 3em;
     }
+}
+
+
+/* Galerie NEW */
+
+.cont-galerie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gal-img {
+    min-width: 10rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.gal-down {
+    display: flex;
+    align-items: center;
+    background-color: #bbb;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.gal-down i {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gal-text {
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.gal-down:hover .bx-right-arrow-alt {
+    transform: translateX(10px);
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+}
+
+
+
+#gallery {
+    line-height: 0;
+    -webkit-column-count: 5;
+    /* split it into 5 columns */
+    -webkit-column-gap: 5px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 5;
+    -moz-column-gap: 5px;
+    column-count: 5;
+    column-gap: 5px;
+}
+
+#gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+    transition: filter 1s;
+}
+
+@media (max-width: 1200px) {
+    #gallery {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1000px) {
+    #gallery {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #gallery {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    #gallery {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+#gallery img:hover {
+    filter: none;
 }
