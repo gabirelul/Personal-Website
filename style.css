@@ -811,8 +811,9 @@ input[type=submit]:hover {
     align-items: center;
     margin-bottom: 1em;
     font-family: 'myfont';
+    text-align: center;
     color: var(--text-color);
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 
