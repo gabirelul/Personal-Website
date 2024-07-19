@@ -85,7 +85,7 @@
         </nav>
     </div>
 
-    <div id="gallery">
+    <!-- <div id="gallery">
         <img src="gallery/cars/photo-1.jpg">
         <img src="gallery/cars/photo-2.jpg">
         <img src="gallery/cars/photo-3.jpg">
@@ -211,8 +211,20 @@
         <img src="gallery/cars/photo-123.jpg">
         <img src="gallery/cars/photo-124.jpg">
         <img src="gallery/cars/photo-125.jpg">
-    </div>
+    </div> -->
+    <div id="gallery"></div>
 
+    <script>
+        const galleryDiv = document.getElementById('gallery');
+        const basePath = '../gallery/cars/';
+        const imageCount = 125;
+
+        for (let i = 1; i <= imageCount; i++) {
+            const img = document.createElement('img');
+            img.src = `${basePath}photo-${i}.jpg`;
+            galleryDiv.appendChild(img);
+        }
+    </script>
     <div class="copyrightss">
         <p>Unauthorized reproduction or use of images from this website is strictly prohibited. All rights reserved ©
             2024</p>

@@ -1848,7 +1848,7 @@ input[type=submit]:hover {
     #gallery {
         -moz-column-count: 1;
         -webkit-column-count: 1;
-        column-count: 1;
+        column-count: 2;
     }
 }
 
