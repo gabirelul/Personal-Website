@@ -504,6 +504,7 @@ hr#short {
     display: flex;
     font-size: 40px;
     align-items: center;
+    text-align: center;
     justify-content: center;
     margin-bottom: 0;
 }
@@ -1909,6 +1910,7 @@ input[type=submit]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1.5rem;
     padding: 1rem 1rem;
     background-color: var(--dark);
     color: white;
