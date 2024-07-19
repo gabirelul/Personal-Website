@@ -1763,6 +1763,13 @@ input[type=submit]:hover {
     gap: 1rem;
 }
 
+.cont-gal {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
 .gal-img {
     min-width: 10rem;
     max-width: 100%;
@@ -1775,6 +1782,7 @@ input[type=submit]:hover {
     background-color: #bbb;
     justify-content: space-between;
     padding: 1rem;
+    margin: 0;
 }
 
 .gal-down i {
@@ -1945,6 +1953,7 @@ input[type=submit]:hover {
         font-size: .9rem;
         padding: .5rem .5rem;
     }
+
     .padding-section {
         padding: 0;
     }
@@ -1956,11 +1965,16 @@ input[type=submit]:hover {
 .evenimente {
     display: flex;
     gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 @media screen and (max-width: 768px) {
     .evenimente {
         flex-direction: column;
     }
-    
+
+    .cont-galerie {
+        flex-direction: column;
+    }
 }
