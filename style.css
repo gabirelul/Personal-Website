@@ -1966,15 +1966,16 @@ input[type=submit]:hover {
 /* Evenimente */
 
 .evenimente {
-    display: flex;
+    display: grid;
     gap: 2rem;
     margin: 0;
     padding: 0;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 @media screen and (max-width: 768px) {
     .evenimente {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .cont-galerie {
