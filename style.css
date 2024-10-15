@@ -2020,10 +2020,18 @@ input[type=submit]:hover {
     justify-content: center;
     align-items: center;
     margin: 0 0 20px 0;
+    gap: 2em;
 }
 
 #video-galerie video {
     width: 320px;
     height: auto;
     max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    #video-galerie {
+        flex-direction: column;
+    }
 }
