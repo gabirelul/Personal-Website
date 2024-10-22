@@ -1887,7 +1887,7 @@ input[type=submit]:hover {
 
 .photo-section__text {
     position: absolute;
-    top: 50%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
