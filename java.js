@@ -1,20 +1,42 @@
 console.log("Script is running.");
 
-const showMenu = (headerToggle, navbarId) => {
-  const toggleBtn = document.getElementById(headerToggle)
-  const nav = document.getElementById(navbarId)
+// Load the navbar
+function loadNavbar() {
+  let navbarPath = "";
+  const currentPath = window.location.pathname;
 
+  if (currentPath.includes("/cars/") || currentPath.includes("/events/")) {
+    navbarPath = "../navbar.html";
+  } else {
+    navbarPath = "navbar.html";
+  }
 
-  if (headerToggle && navbarId) {
-    toggleBtn.addEventListener('click', () => {
-      nav.classList.toggle('show-menu')
-      toggleBtn.classList.toggle("active")
+  fetch(navbarPath)
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-container").innerHTML = data;
+      setupNavToggle(); // Ensure setup runs after navbar is loaded
     })
+    .catch(error => console.error('Error loading navbar:', error));
+}
+
+// Menu toggle
+function setupNavToggle() {
+  const toggleBtn = document.getElementById('header-toggle');
+  const nav = document.getElementById('navbar');
+
+  if (toggleBtn && nav) {
+    toggleBtn.addEventListener('click', () => {
+      nav.classList.toggle('show-menu');
+      toggleBtn.classList.toggle("active");
+    });
   }
 }
-showMenu('header-toggle', 'navbar')
 
+// Load the navbar on page load
+window.onload = loadNavbar;
 
+// Cookie consent popup
 var cookiePopup = document.getElementById('cookie-popup');
 var cookieAccept = document.getElementById('cookie-accept');
 
@@ -28,7 +50,6 @@ cookieAccept.addEventListener('click', function () {
   setCookie('cookieAccepted', 'true', 365);
   cookiePopup.style.display = 'none';
 });
-
 
 function setCookie(name, value, days) {
   var expires = '';
@@ -44,10 +65,7 @@ function getCookie(name) {
   var nameEQ = name + '=';
   var ca = document.cookie.split(';');
   for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) === ' ') {
-      c = c.substring(1, c.length);
-    }
+    var c = ca[i].trim();
     if (c.indexOf(nameEQ) === 0) {
       return c.substring(nameEQ.length, c.length);
     }
@@ -55,27 +73,32 @@ function getCookie(name) {
   return '';
 }
 
-
-// Add active class to the current button (highlight it)
+// Active button highlight
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
+
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.querySelector(".btn.active");
+    if (current) {
+      current.classList.remove("active");
+    }
+    this.classList.add("active");
   });
 }
 
-
-// Working contact form -----------------------------------
+// Contact form validation
 function validateForm() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (name === '' || email === '' || message === '') {
     alert('Please fill in all fields');
+    return false;
+  } else if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address');
     return false;
   }
   return true;
