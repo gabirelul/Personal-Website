@@ -96,6 +96,9 @@ a {
 }
 
 .header-logo {
+    display: flex;
+    align-items: center;
+    gap: .5em;
     color: var(--text-color);
     font-family: var(--body-font);
     font-weight: 600;
