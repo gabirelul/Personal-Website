@@ -4,7 +4,7 @@ Welcome to my personal website! This project is built using **HTML**, **CSS**, a
 
 ## 🌐 Features
 
-- **Photo Gallery**: .
+- **Photo Gallery**: A personal collection of images taken during various events and car photoshoots.
 - **Projects**: A portfolio of the projects I've worked on.
 - **Social Links**: Quick access to my social profiles where you can follow and connect with me.
 
