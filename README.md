@@ -16,7 +16,7 @@ Welcome to my personal website! This project is built using **HTML**, **CSS**, a
 
 ## 💻 Getting Started
 
-To view this website, simply open alexchera.ro in a web browser.
+<p>To view this website, simply open <a href="http://alexchera.ro" target="_blank">alexchera.ro</a> in a web browser.</p>
 
 ## 📂 Project Structure
 
