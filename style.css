@@ -260,7 +260,7 @@ a {
 
 @media screen and (min-width: 769px) {
     body {
-        padding: 0 1rem 0 6rem;
+        padding: 1rem 1.5rem 0 6rem;
     }
 
     .header {
@@ -579,7 +579,7 @@ input[type=submit]:hover {
 }
 
 .between-sections {
-    height: 7vh;
+    height: 1rem;
 }
 
 .section-2Container {
@@ -1402,7 +1402,7 @@ input[type=submit]:hover {
     }
 
     .padding-section {
-        padding: 0;
+        padding: 3rem 0 0 0;
     }
 
     .photo-section-btns {
@@ -1496,19 +1496,82 @@ input[type=submit]:hover {
 
 /* ----------------- BANNER ------------------ */
 
+.banner-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .banner-container img {
     width: 100%;
     height: auto;
 }
 
+.circle-photo-container {
+    position: relative;
+    margin-top: -75px;
+    /* Adjust this value to control the overlap */
+    border: 2px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    /* Adjust the size as needed */
+    height: 150px;
+    /* Adjust the size as needed */
+}
+
+.circle-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .banner-text {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text .banner-text-p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text i {
+    margin-right: 0.5rem;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f0fdf4;
+    color: #037b03;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 15px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.status-badge .dot {
+    height: 8px;
+    width: 8px;
+    background-color: #037b03;
+    border-radius: 50%;
+    margin-right: 8px;
 }
 
 
@@ -1522,20 +1585,17 @@ input[type=submit]:hover {
         height: auto;
     }
 
-    .banner-text {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
     .banner-text h2 {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.65);
     }
 
     .banner-text p {
-        letter-spacing: .2rem;
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .banner-text .location {
+        font-size: 0.8rem;
     }
 }
