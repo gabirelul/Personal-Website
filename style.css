@@ -1371,6 +1371,40 @@ input[type=submit]:hover {
     margin-right: 8px;
 }
 
+/* --------------- Apps Section --------------- */
+
+.apps-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.apps-section h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+    margin: 0;
+    color: var(--text-color)
+}
+
+.apps-icons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    height: 100%;
+}
+
+.apps-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.apps-icons img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 @media screen and (max-width: 768px) {
     .banner {
@@ -1398,4 +1432,12 @@ input[type=submit]:hover {
         height: 150px;
     }
 
+    .apps-icons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .apps-icons img {
+        width: 35px;
+        height: 35px;
+    }
 }
