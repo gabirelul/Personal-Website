@@ -1340,8 +1340,8 @@ input[type=submit]:hover {
 }
 
 .banner-text p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
+    font-size: var(--normal-font-size);
+    margin: 0.3rem 0;
     display: flex;
     align-items: center;
 }
@@ -1378,8 +1378,8 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.apps-section h3 {
-    font-size: 1.2rem;
+.apps-section h4 {
+    font-size: 1rem;
     font-weight: bold;
     padding: 0 0 10px 0;
     margin: 0;
@@ -1423,7 +1423,8 @@ input[type=submit]:hover {
     }
 
     .banner-text p {
-        font-size: 0.9rem;
+        font-size: var(--normal-font-size);
+        margin: 0.2rem 0;
     }
 
     .circle-photo-container {
@@ -1432,9 +1433,9 @@ input[type=submit]:hover {
         height: 150px;
     }
 
-    .apps-icons {
-        grid-template-columns: repeat(4, 1fr);
-    }
+    /* .apps-icons {
+        grid-template-columns: repeat(7, 1fr);
+    } */
 
     .apps-icons img {
         width: 35px;
