@@ -1269,7 +1269,7 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 768px) {
     .evenimente {
-        padding: 4rem 0 0 0;
+        /* padding: 4rem 0 0 0; */
         grid-template-columns: 1fr;
     }
 
