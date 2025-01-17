@@ -39,3 +39,4 @@ Welcome to my personal website! This project is built using **HTML**, **CSS**, a
   - cars.html            - Page for car-related content
   - events.html          - Page for events-related content
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/774e4b96-e508-47e9-b1af-e03024411e41/deploy-status)](https://app.netlify.com/sites/alexchera/deploys)
