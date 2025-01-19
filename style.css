@@ -1225,6 +1225,10 @@ input[type=submit]:hover {
 
 /* ------------------ INDIVIDUAL GALLERY EVENIMENTE ------------------ */
 
+.padding-section {
+    padding-top: var(--header-height)
+}
+
 .evenimente {
     display: grid;
     gap: 2rem;
@@ -1300,6 +1304,30 @@ input[type=submit]:hover {
         margin: 5rem 0 20px 0;
     }
 
+}
+
+#video-container {
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+#video-scroll {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#video-scroll video {
+    border-radius: 7px;
+    flex-shrink: 0;
+    width: calc(100% / 5 - 1rem);
+}
+
+@media (max-width: 768px) {
+    #video-scroll video {
+        width: 70%;
+    }
 }
 
 /* ----------------- BANNER ------------------ */
