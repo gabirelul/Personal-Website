@@ -1316,6 +1316,7 @@ input[type=submit]:hover {
     gap: 1rem;
     flex-wrap: nowrap;
     overflow-x: auto;
+    scrollbar-width: thin;
 }
 
 #video-scroll video {
@@ -1329,6 +1330,7 @@ input[type=submit]:hover {
         width: 70%;
     }
 }
+
 
 /* ----------------- BANNER ------------------ */
 
