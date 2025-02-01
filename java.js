@@ -103,3 +103,24 @@ function validateForm() {
   }
   return true;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const videos = document.querySelectorAll("video");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        let video = entry.target;
+        let source = video.querySelector("source");
+        if (!video.src) {
+          video.src = source.getAttribute("src"); // Lazy load video source
+        }
+        observer.unobserve(video); // Stop observing once loaded
+      }
+    });
+  }, { threshold: 0.5 });
+
+  videos.forEach(video => {
+    observer.observe(video);
+  });
+});
